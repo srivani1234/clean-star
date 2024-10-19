@@ -1,0 +1,438 @@
+/* About Section Container */
+.about-section {
+  background-color: #f7f9fa;
+  padding: 60px 20px; /* Added padding for smaller screens */
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between; /* Better spacing between image and content */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Added for responsiveness */
+}
+
+.about-left, .about-right {
+  flex: 1;
+  padding: 20px; /* Added padding for both sides */
+}
+
+.about-left {
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  border-radius: 50%;
+  width: 100%; /* Use percentage for responsiveness */
+  max-width: 400px; /* Limit the image size */
+  height: auto;
+  object-fit: cover;
+  border: 8px solid white;
+}
+
+.about-right {
+  flex: 1.5;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.about-header {
+  margin-bottom: 20px;
+}
+
+.about-badge {
+  background-color: #ffce00;
+  padding: 8px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #004d2d;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.about-title {
+  font-size: 36px;
+  color: #004d2d;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6; /* Improved readability */
+}
+
+.about-services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+}
+
+.service-item {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.service-icon img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 20px;
+  color: #004d2d;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  color: #555;
+}
+
+/* About Section Contact */
+.about-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.contact-details span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #004d2d;
+}
+
+.contact-details p {
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-consultancy{
+  margin: 10px 0;
+}
+
+.contact-consultancy span {
+  font-size: 16px;
+  color: #004d2d;
+}
+
+.contact-consultancy p {
+  font-size: 20px;
+  color: #004d2d;
+  font-weight: bold;
+}
+
+/* Section Title */
+.section-title {
+  color: #000;
+  font-weight: 500;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.section-title span {
+  background-color: #fed10c;
+  border-radius: 16px;
+  padding: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-right: 5px;
+}
+
+/* Title */
+.title {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* FAQ Section */
+.faq-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.faq-container {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.faq-left, .faq-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.faq-image {
+  width: 100%;
+  height: auto;
+}
+
+.faq-header {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.faq-badge {
+  background-color: yellow;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: green;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 18.8px 1.2px rgba(30, 33, 62, 0.08);
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.faq-answer.show {
+  max-height: 300px; /* Adjusted for better transition effect */
+  padding-top: 10px;
+}
+
+.faq-answer p {
+  margin: 0;
+  background-color: white;
+  padding: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+/* Team Section */
+.team-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f7f7f7;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow-x: auto !important;
+  white-space: nowrap;
+  gap: 20px;
+}
+
+.team-member {
+  flex: 0 0 auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 250px;
+}
+
+.member-image {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 12px solid white;
+}
+
+h3 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+    color: #777;
+    font-weight: 400;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-container,
+  .faq-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-right, .about-left, .faq-left, .faq-right {
+    padding: 20px;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: unset; /* No horizontal scroll for small screens */
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 250px; /* Adjust image size for smaller screens */
+  }
+}
+
+/* App.css */
+.client-feedback-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  margin: 0px auto;
+  width: 80%;
+  padding: 30px 0;
+}
+
+.image-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.feedback-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.text-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-statement {
+  background-color: yellow;
+  color: #333;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.feedback-title {
+  font-size: 2em;
+  margin: 10px 0;
+  color: #004D40; /* Adjust as per the green in your image */
+}
+
+.feedback-text {
+  font-size: 1.2em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.author-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.author-title {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.navigation-arrows {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.arrow-button-next {
+  background-color: green;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+  padding: 16px;
+
+}
+.arrow-button-prev {
+  background-color: yellow;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+  padding: 16px;
+}
+
+.arrow-button:hover {
+  color: #004D40; /* Adjust to match the arrow hover effect */
+}
+
+

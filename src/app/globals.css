@@ -1,0 +1,11 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #f4f4f4;;
+}
+boody:-webkit-scrollbar {
+    display: none;
+  }

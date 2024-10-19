@@ -1,0 +1,387 @@
+.dNone {
+    display: none;
+}
+
+/* Custom styles for specific elements */
+
+/* Top Bar Custom Styles */
+.customTopBar {
+    background-color: #004d00; /* Darker shade for the top bar */
+    border-bottom: 2px solid #ffd700; /* Gold border at the bottom */
+}
+
+/* Top bar styles */
+.topBar {
+    color: white;
+    padding: 28px 20px;
+    font-size: 14px;
+    height: 20vh;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-around; /* Use space-between for even spacing */
+    width: 100%;
+    flex-wrap: wrap; /* Allow items to wrap for better responsiveness */
+}
+
+.infoItem {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0;
+    flex: 1 1 25%; /* Change to 1 1 25% for proper flex-basis and to ensure responsiveness */
+    max-width: 200px; /* Optional: Set a max-width for better control over layout */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+}
+
+/* .infoItem:nth-child(1){
+    width: 30%;
+} */
+.infoItemBtn{
+    background-color: #fdbe0e;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    padding: 16px 20px;
+}
+
+.infoSubItem {
+    width: 80%;
+    margin: 0 0 10px 0;
+}
+.infoSubItem div:nth-child(3){
+    margin-left: 0 !important;
+    margin: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}
+
+.infoItem img {
+    width: 160px;
+    height: auto;
+}
+
+.header {
+    background: #f4f4f4;
+    position: relative; /* Keep header relative */
+    margin: 0 0 16px 0;
+}
+
+.customNavbar {
+    background-color: #333; /* Dark background for navbar */
+    color: #fff; /* White text color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: fixed; /* Fixed position to keep it visible */
+    top: 125px; /* Initially below content */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    left: 50%; /* Position it from the left */
+    background-color: white;
+    transform: translateX(-50%); /* Center it by translating half of its width */
+    transition: width 0s ease, top 0s ease; /* Smooth transition for width and top */
+}
+
+.navbar.sticky {
+    top: 0; /* Stick to the top when scrolling */
+    width: 100% !important; /* Full width when sticky */
+    padding: 0 50px;
+}
+
+/* Nav Links Custom Styles */
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navLogo {
+    /* Add any specific styles for your logo here */
+}
+
+.quoteBtn {
+    padding: 9px 12px;
+}
+
+.customQuoteButton {
+    background-color: #fdbe0e; /* Darker green */
+    color: white;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: max-content;
+}
+
+.customQuoteButton:hover {
+    background-color: #006600; /* Slightly lighter on hover */
+}
+
+.navLinks li a {
+    display: flex;
+    gap: 4px;
+    color: black; /* Black text color for nav links */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px; /* Added padding for better click area */
+    transition: color 0.3s ease; /* Smooth hover effects */
+}
+
+.navLinks li a:hover {
+    color: #ffcc00; /* Lighter gold on hover */
+}
+
+/* Header Outer Custom Styles */
+.customHeaderOuter {
+    width: 100%;
+    height: 71vh; /* Use viewport height for full screen height */
+    background: url('../../assets/head-bg.jpg') no-repeat center center; /* Ensure the image is centered */
+    background-size: cover; /* Ensure the image covers the entire element */
+    margin: 0 0 75px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headbg {
+    font-size: 90px;
+    font-weight: 800;
+    padding: 5rem 5rem 0 5rem;
+}
+
+.headbg span {
+    margin: 0 10px;
+    color: #06ae5a;
+}
+
+.path {
+    font-size: 1.5rem;
+    padding: 0rem 5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: #626664;
+}
+
+.path span {
+    padding: 0 0.5rem;
+}
+
+.line {
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background-color: #626664;
+    position: relative;
+    top: -8px;
+    margin: 0 10px 0 0;
+}
+
+/* Mobile Navigation */
+.menuIcon {
+    display: inline-block; /* Show menu icon on mobile */
+    margin-left: auto; /* Push icon to the right */
+    cursor: pointer; /* Pointer on hover */
+}
+.mobileNav{
+    display: none;
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navLinks {
+        display: none; /* Hide links by default on mobile */
+    }
+
+    .quoteBtn {
+        display: none; /* Hide quote button on mobile */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack items vertically on mobile */
+        width: 100%; /* Full width on mobile */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navLinks li {
+        padding: 10px; /* Add padding for touch targets */
+    }
+
+    .menuIcon {
+        display: block; /* Show menu icon on mobile */
+    }
+    .topBar{
+        display: none !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        display: none !important;
+    }
+
+    .navLogo {
+        display: block; /* Display logo on mobile */
+    }
+
+    .navLinks {
+        display: none; /* Hide the links by default */
+    }
+
+    .menuIcon {
+        display: block; /* Ensure the menu icon is visible */
+    }
+
+    .quoteBtn {
+        display: none; /* Hide the quote button */
+    }
+
+    .navLogo img {
+        width: 100px; /* Adjust logo size for mobile */
+    }
+
+    /* Adjust topBar or any other unnecessary elements on mobile */
+    .topBar {
+        display: none !important;
+    }
+    .mobileNav{
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 12px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    }
+    .mobileIcon{
+        cursor: pointer;
+        color: black;
+    }
+    .header{
+        display: none !important;
+    }
+    .mobileNavItems {
+        display: none; /* Allows the items to be treated as block elements */
+        flex: 1 1 100%; /* Allows the items to grow and shrink */
+        z-index: 100; /* Ensures it stays on top of other elements */
+        width: 0; /* Initially collapsed */
+        height: 100vh; /* Height of the mobile menu */
+        background-color: blue;
+        overflow: hidden; /* Hides overflow content */
+        transition: width 0.3s ease; /* Smooth transition effect */
+        background-color: white; /* Background color to cover the content behind */
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .mobileNavItems ul {
+        list-style: none;
+    }
+    .mobileNavItems ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileNavItems ul li a{
+        text-decoration: none;
+        margin: 10px 0;
+    }
+}
+
+.sidebar {
+    background-color: #1a1a2e; /* Dark background color */
+    color: white; /* White text color */
+    width:100%; /* Fixed width for the sidebar */
+    height: 100vh; /* Full height */
+    padding: 20px; /* Padding around the content */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Shadow for the sidebar */
+}
+
+.menu {
+    margin-bottom: 30px; 
+}
+
+.menuItem {
+    display: flex;
+    justify-content: space-between; /* Align items to the edges */
+    align-items: center; /* Center items vertically */
+    padding: 10px 0; /* Vertical padding for items */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Bottom border for separation */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.menuItem:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+}
+
+.icon {
+    font-size: 1.5rem; /* Larger font size for the icon */
+}
+
+.contactInfo {
+    margin-top: auto; /* Push contact info to the bottom */
+    flex-direction: row;
+}
+.contactInfoSub{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contactInfo h2 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+.crossIcon{
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.socialIcons {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+    margin-top: 10px; /* Margin on top */
+}
+
+.socialIcon {
+    color: white; /* Icon color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+.socialIcon:hover {
+    opacity: 0.7; /* Slight transparency on hover */
+}
+/* Sidebar.module.css */
+.link {
+    color: #fff; /* Change the text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.link:hover {
+    color: #fdbe0e; /* Change color on hover */
+}
+.socialIcon{
+    background-color: #393f53;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+}
+

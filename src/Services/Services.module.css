@@ -1,0 +1,337 @@
+/* Services.module.css */
+
+/* Services Section */
+.servicesSection {
+  text-align: center;
+  padding: 50px 20px; /* Added horizontal padding for small screens */
+}
+
+.headerSection {
+  margin-bottom: 40px;
+}
+
+.serviceHighlight {
+  color: #ffc107; /* Yellow */
+  background-color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.serviceTitle {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.feedbackHeading {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* Scrollable Container for Cards */
+.scrollableCardsContainer {
+  max-height: 400px; /* Adjust this value as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 20px; /* Optional padding */
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Added gap between cards */
+}
+
+.serviceCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; /* Image and content in a row */
+  align-items: center; /* Centered content */
+  width: 45%; /* Changed to a smaller width for better responsiveness */
+  margin: 20px;
+  transition: transform 0.3s; /* Added transition for hover effect */
+}
+
+.serviceCard:hover {
+  transform: scale(1.02); /* Scale effect on hover */
+}
+
+.serviceImage {
+  padding-left: 20px;
+  width: 150px; /* Fixed width for images */
+  height: 150px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio */
+  clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 75% 94%, 25% 94%, 0% 50%); /* Hexagon shape */
+}
+
+
+.socialIcon {
+  color: white; /* Icon color */
+  font-size: 1.5rem; /* Icon size */
+  text-decoration: none; /* Remove underline */
+}
+.cardContent {
+  padding: 20px;
+  text-align: start; /* Centered text */
+}
+
+.serviceIcon {
+  font-size: 40px;
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.serviceDescription {
+  display: flex;
+  padding-top:10px;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.learnMoreBtn {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Added transition */
+}
+
+.learnMoreBtn:hover {
+  background-color: #e0a800;
+}
+
+.sectionTitle {
+  color: #000;
+  font-weight: 500;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.sectionTitle span {
+  background-color: #fed10c;
+  border-radius: 16px;
+  padding: 8px;
+  margin-right: 5px;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Feedback Container */
+.feedBackOuter {
+  display: flex;
+  flex-direction: row; /* Column for stacking */
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+  padding: 50px 20px; /* Added horizontal padding for small screens */
+}
+
+.feedbackContainer {
+  text-align: center;
+  width: 75%; /* Full width for responsiveness */
+}
+
+.feedbackHeader {
+  margin-bottom: 30px;
+  text-align: start;
+  padding: 0 20px; /* Adjusted for smaller screens */
+}
+
+.feedbackTag {
+  display: inline-block;
+  background-color: #ffcc00; /* Yellow color */
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.feedbackHeader h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #1a1a1a; /* Black text */
+}
+
+.feedbackCards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  width:100%;
+  overflow-x: scroll;
+}
+.feedBackForm{
+  width: 25%;
+}
+.feedbackCards {
+  overflow-y: auto; /* Ensure vertical scrolling */
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.feedbackCards::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Optionally, for other browsers (Firefox) */
+.feedbackCards {
+  scrollbar-width: none; /* For Firefox */
+}
+
+
+.feedbackCard {
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 300px;
+  position: relative;
+  text-align: left;
+  display: inline-flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.feedbackCard .quoteIcon {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  font-size: 140px;
+  background-color: #1aac4d;
+  color: #FFFFFF; /* Green color for the quote */
+  height: 68px;
+  width: 50px;
+  text-align: center;
+}
+
+.feedbackCard img.avatar {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.feedbackCard h2 {
+  margin: 5px 0 10px;
+  font-size: 20px;
+  color: #1a1a1a;
+  font-weight: 700;
+}
+
+.feedbackDescription {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Feedback Form Styles */
+.formContainer {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Responsive width for the form */
+}
+
+.formTitle {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.appointmentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appointmentForm input,
+.appointmentForm select,
+.appointmentForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.appointmentForm input:focus,
+.appointmentForm select:focus,
+.appointmentForm textarea:focus {
+  border-color: #28a745; /* Change border color on focus */
+  outline: none; /* Remove outline */
+}
+
+.appointmentForm textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+  .feedbackCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .serviceCard {
+    width: 90%; /* Responsive width for service cards on small screens */
+    margin: 20px 0; /* Margin adjustments for better spacing */
+  }
+
+  
+
+  .feedbackCard {
+    width: 90%; /* Make feedback cards responsive */
+  }
+
+  .scrollableCardsContainer {
+    max-height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 1000px) {
+  .feedBackOuter {
+    flex-direction: column;
+  }
+  .feedBackForm{
+    width: max-content;
+  }
+  .formContainer {
+    width: max-content; /* Full width on small screens */
+  }
+}

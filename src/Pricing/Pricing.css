@@ -1,0 +1,256 @@
+.pricing-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pricing-header {
+    margin-bottom: 40px;
+}
+
+.pricing-tag {
+    background-color: #ffcc00; /* Yellow */
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.pricing-header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-top: 10px;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon-container img {
+    width: 60px;
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1aac4d; /* Green */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.service-button {
+    background-color: #1aac4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.service-button:hover {
+    background-color: #15903a;
+}
+.image-icon{
+  width: auto !important;
+  mix-blend-mode: multiply;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1rem solid whitesmoke;
+  padding:1rem;
+}
+.pricing-image-placeholder img{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .pricing-cards-container{
+    flex-direction: column;
+  }
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.section-title {
+    color: #000000;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .section-title span{
+    background-color: #fed10c;
+      border-radius: 16px;
+      padding: 8px;
+      width: max-content;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-right: 5px;
+    
+  }
+  
+  .title {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+
+  /* Updated CSS for new class names */
+.pricing-container {
+    text-align: center;
+    background-color: #004d2d;
+    color: white;
+    padding: 50px 0;
+    margin: 30px 0;
+
+  }
+  
+  .pricing-header-section {
+    margin-bottom: 20px;
+  }
+  
+  .pricing-title {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .pricing-subtitle {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #ffce00;
+  }
+  
+  .pricing-toggle-buttons {
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    width: max-content;
+    margin: 0px auto;
+    border-radius: 30px;
+    padding: 8px;
+  }
+  
+  .pricing-toggle-button {
+    background-color: #fff;
+    color: #004d2d;
+    border: none;
+    padding: 13px 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+  .pricing-toggle-button.monthly{
+    background-color: green;
+    color: white;
+  }
+  
+  .pricing-toggle-button.yearly-active {
+    background-color: #ffce00;
+    color: #fff;
+  }
+  
+  .pricing-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .pricing-card-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .pricing-image-placeholder {
+    height: 150px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-amount {
+    font-size: 36px;
+    color: #ffce00;
+  }
+  
+  .pricing-plan-title {
+    font-size: 24px;
+    color: #004d2d;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-cta-button {
+    background-color: #ffce00;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-features-list {
+    list-style: none;
+    padding: 0;
+    color: #004d2d;
+  }
+  
+  .pricing-feature-item {
+    padding: 5px 0;
+  }
+  
+  
